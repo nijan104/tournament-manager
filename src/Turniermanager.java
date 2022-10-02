@@ -1,4 +1,7 @@
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.Comparator;
 
 public class Turniermanager {
     public static void main(String[] args) {
@@ -36,6 +39,14 @@ public class Turniermanager {
 
         ArrayList<Team> teams = createTeams.create("lineups.txt");
         for (Team team : teams){
+            System.out.println(team.getName() + " " + team.getMmr());
+        }
+
+        teams.sort((t1, t2) -> t2.getMmr() - t1.getMmr());
+
+        System.out.println("Sortiert absteigend:");
+
+        for(Team team : teams){
             System.out.println(team.getName() + " " + team.getMmr());
         }
 

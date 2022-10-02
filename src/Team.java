@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 
-public class Team {
+public class Team implements Comparable<Team>{
     private int mmr = 0;
     private int players = 0;
     private final int playerCap = 5;
@@ -64,5 +64,10 @@ public class Team {
 
     public String getName(){
         return this.name;
+    }
+
+    @Override
+    public int compareTo(Team team) {
+        return this.mmr - team.mmr;
     }
 }
