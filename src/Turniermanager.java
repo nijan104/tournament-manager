@@ -50,5 +50,8 @@ public class Turniermanager {
             System.out.println(team.getName() + " " + team.getMmr());
         }
 
+        System.out.println("Gruppen:");
+        createGroups.create(teams);
+
     }
 }
