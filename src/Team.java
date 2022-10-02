@@ -5,10 +5,21 @@ public class Team {
     private int players = 0;
     private final int playerCap = 5;
     private ArrayList<Player> lineup = new ArrayList<>(playerCap);
+    private String name = "default";
 
 
     Team(){
 
+    }
+
+    Team(ArrayList<Player> lineup, String name){
+        this.players = lineup.size();
+        this.lineup = lineup;
+        this.name = name;
+        mmr = 0;
+        for (Player player : lineup) {
+            mmr += player.getMmr();
+        }
     }
 
     Team(ArrayList<Player> lineup){
@@ -49,5 +60,9 @@ public class Team {
     public int getMmr(){
         return this.mmr;
 
+    }
+
+    public String getName(){
+        return this.name;
     }
 }

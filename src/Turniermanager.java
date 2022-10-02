@@ -30,5 +30,14 @@ public class Turniermanager {
         Dreamteam.addPlayer(Jonny);
         Player Codi = new Player(77);
         Dreamteam.addPlayer(Codi);
+
+        System.out.println("Hier gehts los:");
+        writeLineups.write("lineups.txt");
+
+        ArrayList<Team> teams = createTeams.create("lineups.txt");
+        for (Team team : teams){
+            System.out.println(team.getName() + " " + team.getMmr());
+        }
+
     }
 }
