@@ -1,3 +1,4 @@
+import javax.swing.*;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
@@ -51,7 +52,13 @@ public class Turniermanager {
         }
 
         System.out.println("Gruppen:");
-        createGroups.create(teams);
+        Group[] groups = createGroups.create(teams);
+
+        System.out.println("GUI:");
+
+
+        JFrame frame = new GroupsDisplayGUI(groups);
+        frame.setVisible(true);
 
     }
 }
