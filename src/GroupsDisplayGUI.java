@@ -32,8 +32,8 @@ public class GroupsDisplayGUI extends JFrame{
     private JLabel match1Sets;
     private JLabel match1Points;
     private JLabel match1Time;
-    private JButton enterMatchResultButton;
-    private JCheckBox checkBox1;
+    private JButton editButton;
+    private JCheckBox finishedCheckBox;
 
     GroupsDisplayGUI(Group[] groups){
         super("Groupstage");

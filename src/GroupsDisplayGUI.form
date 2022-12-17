@@ -463,20 +463,20 @@
           <text value="10:00"/>
         </properties>
       </component>
-      <component id="8dfa7" class="javax.swing.JButton" binding="enterMatchResultButton" default-binding="true">
+      <component id="8dfa7" class="javax.swing.JButton" binding="editButton" default-binding="true">
         <constraints>
           <grid row="8" column="8" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
-          <text value="enter match result"/>
+          <text value="edit"/>
         </properties>
       </component>
-      <component id="12905" class="javax.swing.JCheckBox" binding="checkBox1" default-binding="true">
+      <component id="12905" class="javax.swing.JCheckBox" binding="finishedCheckBox" default-binding="true">
         <constraints>
           <grid row="8" column="9" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
-          <text value="CheckBox"/>
+          <text value="Finished"/>
         </properties>
       </component>
       <component id="152c5" class="javax.swing.JLabel">
